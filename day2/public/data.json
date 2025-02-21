@@ -1,0 +1,119 @@
+{
+    "about": {
+      "title": "About Us",
+      "description": "We are a company dedicated to providing the highest quality products and services. Our mission is to innovate and offer solutions that make life easier and better for our customers. Founded in 2010, we have expanded globally and continue to grow, setting new standards in the industry.",
+      "history": [
+        "Founded in 2010",
+        "Global expansion began in 2015",
+        "Launched our first product line in 2012"
+      ],
+      "team": [
+        {
+          "id":1,
+          "name": "John Doe",
+          "position": "CEO",
+          "bio": "John is the visionary behind our company's success. With over 20 years of experience in the industry, he leads with a commitment to innovation and quality."
+        },
+        {
+          "id":2,
+          "name": "Jane Smith",
+          "position": "Chief Marketing Officer",
+          "bio": "Jane oversees our marketing strategy and brand development. Her creativity and expertise have played a key role in positioning us as a leading brand."
+        },
+        {
+          "id": 3,
+          "name": "Michael Johnson",
+          "position": "Chief Technology Officer",
+          "bio": "Michael is responsible for technological innovation and product development. With a background in software engineering, he drives our digital transformation efforts."
+        }
+      ],
+      "mission": "To be the global leader in providing innovative and sustainable products that make a difference in our customers' lives."
+    },
+    "products": [
+      {
+        "id": 1,
+        "name": "Wireless Headphones",
+        "description": "High-quality noise-canceling headphones with 30 hours of battery life.",
+        "price": 99.99,
+        "image_url": "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-169994-674010.jpg&fm=jpg",
+        "category": "Electronics",
+        "availability": "In Stock",
+        "ratings": 4.5,
+        "features": [
+          "Noise-canceling",
+          "30-hour battery life",
+          "Wireless Bluetooth connection",
+          "Built-in microphone"
+        ],
+        "reviews": [
+          {
+            "username": "SarahLee",
+            "rating": 5,
+            "comment": "Excellent sound quality and great comfort!"
+          },
+          {
+            "username": "MikeW",
+            "rating": 4,
+            "comment": "Good headphones but a little bulky."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Smart Watch",
+        "description": "A sleek, water-resistant smartwatch that tracks your fitness and integrates with your phone.",
+        "price": 149.99,
+        "image_url": "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-169994-674010.jpg&fm=jpg",
+        "category": "Wearables",
+        "availability": "Out of Stock",
+        "ratings": 4.8,
+        "features": [
+          "Water-resistant",
+          "Fitness tracking",
+          "Phone integration",
+          "Heart rate monitor"
+        ],
+        "reviews": [
+          {
+            "username": "EmilyJ",
+            "rating": 5,
+            "comment": "I love the design and features!"
+          },
+          {
+            "username": "CarlosM",
+            "rating": 4,
+            "comment": "A great watch, but I wish the battery lasted longer."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Portable Speaker",
+        "description": "A compact, waterproof Bluetooth speaker with 12-hour battery life.",
+        "price": 59.99,
+        "image_url": "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-169994-674010.jpg&fm=jpg",
+        "category": "Electronics",
+        "availability": "In Stock",
+        "ratings": 4.7,
+        "features": [
+          "Waterproof",
+          "12-hour battery life",
+          "Compact design",
+          "Bluetooth connectivity"
+        ],
+        "reviews": [
+          {
+            "username": "TomR",
+            "rating": 5,
+            "comment": "Perfect for outdoor activities!"
+          },
+          {
+            "username": "LilyG",
+            "rating": 4,
+            "comment": "Great sound for the size, but could be a little louder."
+          }
+        ]
+      }
+    ]
+  }
+  
