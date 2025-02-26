@@ -1,0 +1,216 @@
+{
+    "teachers": [
+        {
+            "id": 1,
+            "name": "Rajesh Sharma",
+            "subject": "Mathematics"
+        },
+        {
+            "id": 2,
+            "name": "Priya Verma",
+            "subject": "English"
+        },
+        {
+            "id": 3,
+            "name": "Anil Kumar",
+            "subject": "Physics"
+        },
+        {
+            "id": 4,
+            "name": "Sunita Joshi",
+            "subject": "Biology"
+        },
+        {
+            "id": 5,
+            "name": "Vikram Singh",
+            "subject": "History"
+        },
+        {
+            "id": 6,
+            "name": "Lakshit",
+            "subject": "HTML"
+        }
+    ],
+    "students": [
+        {
+            "id": 1,
+            "name": "Amit Patel",
+            "age": 15,
+            "teacher_id": 1
+        },
+        {
+            "id": 2,
+            "name": "Sneha Gupta",
+            "age": 14,
+            "teacher_id": 1
+        },
+        {
+            "id": 3,
+            "name": "Rohan Mehta",
+            "age": 16,
+            "teacher_id": 1
+        },
+        {
+            "id": 4,
+            "name": "Pooja Reddy",
+            "age": 15,
+            "teacher_id": 1
+        },
+        {
+            "id": 5,
+            "name": "Vikas Yadav",
+            "age": 14,
+            "teacher_id": 1
+        },
+        {
+            "id": 6,
+            "name": "Neha Sharma",
+            "age": 15,
+            "teacher_id": 2
+        },
+        {
+            "id": 7,
+            "name": "Kunal Nair",
+            "age": 16,
+            "teacher_id": 2
+        },
+        {
+            "id": 8,
+            "name": "Ishita Pandey",
+            "age": 14,
+            "teacher_id": 2
+        },
+        {
+            "id": 9,
+            "name": "Saurabh Mishra",
+            "age": 15,
+            "teacher_id": 2
+        },
+        {
+            "id": 10,
+            "name": "Meera Iyer",
+            "age": 14,
+            "teacher_id": 2
+        },
+        {
+            "id": 11,
+            "name": "Arjun Saxena",
+            "age": 16,
+            "teacher_id": 3
+        },
+        {
+            "id": 12,
+            "name": "Divya Pillai",
+            "age": 15,
+            "teacher_id": 3
+        },
+        {
+            "id": 13,
+            "name": "Tarun Bhatia",
+            "age": 14,
+            "teacher_id": 3
+        },
+        {
+            "id": 14,
+            "name": "Sanya Kapoor",
+            "age": 15,
+            "teacher_id": 3
+        },
+        {
+            "id": 15,
+            "name": "Rahul Deshmukh",
+            "age": 16,
+            "teacher_id": 3
+        },
+        {
+            "id": 16,
+            "name": "Ananya Sen",
+            "age": 15,
+            "teacher_id": 4
+        },
+        {
+            "id": 17,
+            "name": "Vivek Malhotra",
+            "age": 14,
+            "teacher_id": 4
+        },
+        {
+            "id": 18,
+            "name": "Tanvi Rathi",
+            "age": 15,
+            "teacher_id": 4
+        },
+        {
+            "id": 19,
+            "name": "Harsh Vardhan",
+            "age": 16,
+            "teacher_id": 4
+        },
+        {
+            "id": 20,
+            "name": "Kiran Das",
+            "age": 14,
+            "teacher_id": 4
+        },
+        {
+            "id": 21,
+            "name": "Preeti Choudhary",
+            "age": 15,
+            "teacher_id": 5
+        },
+        {
+            "id": 22,
+            "name": "Aditya Menon",
+            "age": 16,
+            "teacher_id": 5
+        },
+        {
+            "id": 23,
+            "name": "Simran Kaur",
+            "age": 14,
+            "teacher_id": 5
+        },
+        {
+            "id": 24,
+            "name": "Rajat Dubey",
+            "age": 15,
+            "teacher_id": 5
+        },
+        {
+            "id": 25,
+            "name": "Bhavya Rajput",
+            "age": 14,
+            "teacher_id": 5
+        },
+        {
+            "id": 26,
+            "name": "Gaurav Bhattacharya",
+            "age": 16,
+            "teacher_id": 1
+        },
+        {
+            "id": 27,
+            "name": "Swati Jain",
+            "age": 15,
+            "teacher_id": 2
+        },
+        {
+            "id": 28,
+            "name": "Nitin Sinha",
+            "age": 14,
+            "teacher_id": 3
+        },
+        {
+            "id": 29,
+            "name": "Yash Thakur",
+            "age": 15,
+            "teacher_id": 4
+        },
+        {
+            "id": 30,
+            "name": "Lavanya Bose",
+            "age": 14,
+            "teacher_id": 5
+        }
+    ]
+}
