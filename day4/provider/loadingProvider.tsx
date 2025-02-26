@@ -1,5 +1,5 @@
 
-import { ReactNode, useContext, useState } from "react";
+import { ReactNode, useState } from "react";
 import { createContext } from "react";
 
 interface LoadingContextType {
@@ -12,13 +12,11 @@ interface LoaderProviderProps {
     children: ReactNode;
 }
 
-const LoadingContext = createContext<LoadingContextType |undefined >(undefined);
+export const LoadingContext = createContext<LoadingContextType>({
+    loading: false,
+    setLoading: () => {},
+});
 
-//here we created our custom hook
-export const useLoading = () => {
-    const context = useContext(LoadingContext);
-    return context;
-};
 
 export const LoaderProvider : React.FC<LoaderProviderProps> = ({children}) => {
     const [loading,setLoading] = useState(false);
@@ -28,5 +26,12 @@ export const LoaderProvider : React.FC<LoaderProviderProps> = ({children}) => {
             {children}
         </LoadingContext.Provider>
     )
-
+    
 }
+
+
+//here we created our custom hook
+// export const useLoading = () => {
+//     const context = useContext(LoadingContext);
+//     return context;
+// };

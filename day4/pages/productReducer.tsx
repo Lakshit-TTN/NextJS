@@ -1,6 +1,8 @@
 "use client"
-import { useLoading } from "@/provider/loadingProvider";
-import { useEffect, useReducer } from "react"
+import { LoadingContext } from "@/provider/loadingProvider";
+import { useContext, useEffect, useReducer, useState } from "react"
+
+
 interface Product {
     id: number;
     name: string;
@@ -38,9 +40,8 @@ const reducer = (state: State, action: Action) => {
 const ProductReducer: React.FC = () => {
     //it thas a state var and dispatch fn 
     const [state, dispatch] = useReducer(reducer, initialValue);
-
-    const { loading, setLoading } = useLoading();
-
+    const { loading, setLoading } = useContext(LoadingContext);
+    const [productName, setProductName] = useState("");
     useEffect(() => {
         const fetchProd = async () => {
             try {
@@ -54,7 +55,6 @@ const ProductReducer: React.FC = () => {
             finally {
                 setLoading(false)
             }
-
         }
         fetchProd()
     }, [setLoading])
@@ -63,19 +63,22 @@ const ProductReducer: React.FC = () => {
         dispatch({ type: "delete", payload: id });
     }
     const handleAdd = () => {
-        const newProd = { id: Date.now(), name: "pen" };//we have added predefined product here : we can use an input and add the following 
+        const newProd = { id: Date.now(), name: productName };//we have added predefined product here : we can use an input and add the following 
         dispatch({ type: "add", payload: newProd });
+        setProductName("");
     }
     return (
         <div>
-            <button onClick={handleAdd}>Add</button>
-            {loading ? <p>Loading...</p> :
-                <ul>
-                    {state.products.map((p) => (
-                        <li key={p.id}>{p.name} <button onClick={() => handleDel(p.id)}>Delete</button></li>
-                    ))}
-                </ul>}
-        </div>
+        <input type="text" value={productName} onChange={(e) => setProductName(e.target.value)} placeholder="Enter product name" />
+        <button onClick={handleAdd}>Add</button>
+        {loading ? <p>Loading...</p> :
+            <ul>
+                {state.products.map((p) => (
+                    <li key={p.id}>{p.name} <button onClick={() => handleDel(p.id)}>Delete</button></li>
+                ))}
+            </ul>
+        }
+    </div>
     )
 }
 export default ProductReducer;
